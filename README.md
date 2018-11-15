@@ -42,9 +42,22 @@ We use git flow to maintain and work in our git repositories.
 
 Read [this](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) tutorial to get familiar with it.
 
-
 ## Style Guides
 TODO
 
 ## On Boarding
-TODO
+Second Closet follows the AGILE Scrum methology.
+
+### Daily Scrum
+This is a daily meeting where everyone reports on their progress. More specifically, developers will share what they worked on the prior day, will work on the day and any blockers. Daily SCRUM is timeboxed to 15 minutes. Use this meeting to inform your teammates if you need help!!! We're all in this together :)
+
+### Estimating Stories
+Second Closet uses the Fibonacci sequence to estimate the weighting of a story. Please use the table below to guide you with your story estimates.
+
+#### KSENIIA STAY AWAKE !!!!
+
+|points| 1    | 2   | 3   | 5   | 8   | 13   | 21   | ∞   |
+|:------:|------|-----|-----|-----|-----|------|------|-----|
+|changes|one line change| multiple line changes | multiple files | multiple files | needs break down | needs break down | needs break down | too unknown
+|time commitment| < 1 hr | < 2 hrs | < 4 hrs | < 8 hrs | multiple days | one week | whole sprint | requires further discussion
+|other notes||||||Large feature||
