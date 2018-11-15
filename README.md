@@ -31,11 +31,16 @@ We use 3 different schemes for naming our branches. There should be a JIRA ticke
     Eq: PROJ-225/add-a-new-user
     ```
 
+### Pull Requests (PR)
+
+#### Name convention
+Please name all PRs the same as the branch. The key is that we tag it with the JIRA ticket to ensure that the smart commits are triggered.
+
 ### Branching Strategy
 
 We use git flow to maintain and work in our git repositories.
 
-Read [This](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) tutorial to get familiar with it.
+Read [this](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) tutorial to get familiar with it.
 
 
 ## Style Guides
