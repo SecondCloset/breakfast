@@ -1,5 +1,5 @@
 # Breakfast
-A repo of all the best practises at Second Closet
+A repo of all the best practices at Second Closet
 
 
 ## Using Git
@@ -46,10 +46,10 @@ Read [this](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-
 TODO
 
 ## On Boarding
-Second Closet follows the AGILE Scrum methology.
+Second Closet follows the AGILE Scrum methodology.
 
 ### Daily Scrum
-This is a daily meeting where everyone reports on their progress. More specifically, developers will share what they worked on the prior day, will work on the day and any blockers. Daily SCRUM is timeboxed to 15 minutes. Use this meeting to inform your teammates if you need help!!! We're all in this together :)
+This is a daily meeting where everyone reports on their progress. More specifically, developers will share what they worked on the prior day, will work on the day and any blockers. Daily SCRUM is time-boxed to 15 minutes. Use this meeting to inform your teammates if you need help!!! We're all in this together :)
 
 ### Estimating Stories
 Second Closet uses the Fibonacci sequence to estimate the weighting of a story. Please use the table below to guide you with your story estimates.
@@ -61,3 +61,21 @@ Second Closet uses the Fibonacci sequence to estimate the weighting of a story. 
 |changes|one line change| multiple line changes | multiple files | multiple files | needs break down | needs break down | needs break down | too unknown
 |time commitment| < 1 hr | < 2 hrs | < 4 hrs | < 8 hrs | multiple days | one week | whole sprint | requires further discussion
 |other notes||||||Large feature||
+
+## Deployment Process
+
+1. branch out of develop for a release branch, naming: `Release/x.x`
+2. In release branch, change version number to match JIRA. 
+3. Commit changes with message: change version number to x.x.
+4. local testing on the release branch
+5. Launch release branch `Release/x.x` on staging
+6. Test on staging
+7. Create 2 PRs, one to develop and one to master
+8. External review and merge
+9. Git diff release branch `Release/x.x` and `master`, if nothing differs, deploy `master` to live
+10. Go to Jira => Releases => find the release version => click release notes => copy
+11. Github => Releases => New release => paste => input version number and title => save draft
+12. Check live site for the updates
+13. After confirm, release the draft on Github and release on JIRA
+14. Email company to notify changes
+
