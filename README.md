@@ -59,7 +59,7 @@ Second Closet uses the Fibonacci sequence to estimate the weighting of a story. 
 |points| 1    | 2   | 3   | 5   | 8   | 13   | 21   | ∞   |
 |:------:|------|-----|-----|-----|-----|------|------|-----|
 |changes|one line change| multiple line changes | multiple files | multiple files | needs break down | needs break down | needs break down | too unknown
-|time commitment| < 1 hr | < 2 hrs | < 4 hrs | < 8 hrs | multiple days | one week | whole sprint | requires further discussion
+|time commitment| < 1 hr | < 2 hrs | < 4 hrs | < 8 hrs | 1-3 days | 4-5 days | 6-10 days | requires further discussion
 |other notes||||||Large feature||
 
 ## Deployment Process
