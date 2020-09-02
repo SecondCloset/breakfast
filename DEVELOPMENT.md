@@ -1,1 +1,0 @@
-# Second Closet Development Process
