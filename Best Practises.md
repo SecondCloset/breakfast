@@ -19,12 +19,12 @@ We like to keep it simple. Our overall goal is to move towards [Truck based deve
 
 3. [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
-  Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+   Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
 
 4. [Interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 
-  Many client-specific interfaces are better than one general-purpose interface.
+   Many client-specific interfaces are better than one general-purpose interface.
 
 5. [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
 
-  One should "depend upon abstractions, [not] concretions.
+   One should "depend upon abstractions, [not] concretions.
