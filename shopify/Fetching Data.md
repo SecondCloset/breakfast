@@ -21,6 +21,28 @@ The Shopify order ID is the first section of the `external_order_id` of a `::Ful
   ::Integration::Shopify::OrderRepository.all(shop, params: { name: shopify_order_number, status: :any })
 ```
 
+### Printing line items of an order
+```ruby
+  irb(main):165:0> order.line_items.each { |i| print [i.sku, name]; puts }; nil
+  ["PTS-3PC-TWIN-PINSTRIPE", "Sheet Set - PINSTRIPE / Twin XL"]
+  ["PFS-4PC-FULL-PINSTRIPE", "Sheet Set - PINSTRIPE / Full/Double"]
+  ["PQS-4PC-QUEEN-PINSTRIPE", "Sheet Set - PINSTRIPE / Queen"]
+```
+
+### Printing refunded line items of an order
+```ruby
+  irb(main):166:0> order.refunds.map(&:refund_line_items).flatten.map(&:line_item).each { |i| print [i.sku, i.variant_title]; puts };nil
+  ["PTS-3PC-TWIN-PINSTRIPE", "PINSTRIPE / Twin XL"]
+  ["PFS-4PC-FULL-PINSTRIPE", "PINSTRIPE / Full/Double"]
+```
+
+### Printing fulfillments of an order
+```ruby
+  irb(main):173:0> order.shipments.map(&:line_items).flatten.map(&:name)
+  => ["Return Label BC to ON", "48MP WiFi Touchscreen Kids Digital Camera + HD Video Camcorder 2 in 1 (Model K) - Model K - Zippy"]
+```
+
+
 ## Products
 ### Find all products on a store
 ```ruby
