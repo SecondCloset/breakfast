@@ -1,3 +1,13 @@
+- [Overview](#overview)
+    + [1. Get Fulfillment Order](#1-get-fulfillment-order)
+    + [2. Get Shopify Shop](#2-get-shopify-shop)
+    + [3. Get Shopify Order](#3-get-shopify-order)
+    + [4. Collect products and customer details](#4-collect-products-and-customer-details)
+    + [5. Initiate Shopify order sync](#5-initiate-shopify-order-sync)
+    + [6. Result](#6-result)
+  * [On Failure](#on-failure)
+    + [Things to consider](#things-to-consider)
+
 # Overview
 This section will guide you through how to resync shopify orders via `rails` console. This guide is based on the implementation of `app/workers/integrations/shopify/webhooks/orders_create_or_update_job.rb`
 
@@ -48,3 +58,15 @@ result = Integrations::Shopify::SyncShop.call(
 # you can explicitly check the result
 result.success?
 ```
+
+## On Failure
+
+On sync failure, email with error message will be sent to `developers@secondcloset.com`.
+
+### Things to consider
+- Product SKU already exists
+  * May have to look into `ShopProduct` (Shopify product - SC product mapping) entity
+  * SKU changes from Shopify may have caused this - need to confirm with the merchant first
+- Items fulfillment product must exists
+  * Check if Shopify order line items all have proper SKU
+- Else

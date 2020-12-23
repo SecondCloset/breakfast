@@ -1,8 +1,21 @@
+- [Overview](#overview)
+- [Shopify Entities](#shopify-entities)
+  * [Products](#products)
+  * [Inventory Items](#inventory-items)
+  * [Orders](#orders)
+  * [Customers](#customers)
+  * [Locations](#locations)
+  * [Fulfillments](#fulfillments)
+- [Internal References to Shopify](#internal-references-to-shopify)
+  * [Shops](#shops)
+  * [Orders](#orders-1)
+  * [Shipments](#shipments)
+  * [Products](#products-1)
+
 # Overview
 This section breaks down the relevant entities on Shopify's side and how they relate to entities in our system.
 
 # Shopify Entities
-
 ## Products
 Products on Shopify are very similar to the products in our system. Each product is composed of multiple variants (for example a t-shirt might be broken up into multiple variants for different colors). Each product in our system should map directly to a variant if connected to Shopify.
 
